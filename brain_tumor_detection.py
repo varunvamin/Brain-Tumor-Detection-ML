@@ -3,14 +3,19 @@
 # Classifiers: SVM | KNN | Random Forest | PCA
 # ============================================================
 
-# ── STEP 1: Upload & Extract Dataset ─────────────────────────
-from google.colab import files
-uploaded = files.upload()
-
+# ── STEP 1: Define & Extract Dataset ─────────────────────────
+import sys
 import zipfile
 import os
 
-zip_name = list(uploaded.keys())[0]
+zip_name = input("Enter the path to your dataset zip file (e.g., dataset.zip) [default: dataset.zip]: ").strip()
+if not zip_name:
+    zip_name = "dataset.zip"
+
+if not os.path.exists(zip_name):
+    print(f"Error: '{zip_name}' not found. Please place the dataset in the current directory.")
+    sys.exit(1)
+
 print(f"Extracting: {zip_name}")
 
 with zipfile.ZipFile(zip_name, 'r') as zip_ref:
@@ -182,10 +187,11 @@ best_model = models[np.argmax(accuracies)]
 print(f"\nBest performing model: {best_model} with {max(accuracies)*100:.2f}% accuracy")
 
 # ── STEP 12: Predict on New MRI Image ────────────────────────
-print("Upload an MRI image to predict:")
-uploaded_img = files.upload()
+img_name = input("\nEnter the path to an MRI image for prediction: ").strip()
 
-img_name = list(uploaded_img.keys())[0]
+if not os.path.exists(img_name):
+    print(f"Error: Image '{img_name}' not found.")
+    sys.exit(1)
 
 img  = cv2.imread(img_name)
 img  = cv2.resize(img, (128, 128))
