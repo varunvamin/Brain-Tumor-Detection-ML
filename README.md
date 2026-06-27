@@ -11,7 +11,7 @@ You don't need to download large datasets or wait for models to train. The pre-t
 
 1. **Clone the repository:**
    ```bash
-   git clone <YOUR_REPO_URL_HERE>
+   git clone https://github.com/varunvamin/Brain-Tumor-Detection-ML.git
    cd Brain_tumor
    ```
 
@@ -34,7 +34,7 @@ You don't need to download large datasets or wait for models to train. The pre-t
 If you want to train the models yourself, you will need the MRI dataset. 
 
 1. **Download the Dataset:**
-   Download the Brain MRI dataset (e.g., from Kaggle) and place the `dataset.zip` file in the root of this project. The zip should contain a `yes` (tumor) and `no` (healthy) folder.
+   Download the [Brain MRI dataset from Kaggle](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection) and place the `dataset.zip` file in the root of this project. The zip should contain a `yes` (tumor) and `no` (healthy) folder.
 
 2. **Run Training Mode:**
    ```bash
