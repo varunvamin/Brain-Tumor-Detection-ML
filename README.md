@@ -1,5 +1,7 @@
 # Brain Tumor Detection Using Machine Learning
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/varunvamin/Brain-Tumor-Detection-ML/blob/main/Brain_Tumor_Detection.ipynb)
+
 **Python, OpenCV, Scikit-learn, argparse, joblib**
 
 ## Overview
