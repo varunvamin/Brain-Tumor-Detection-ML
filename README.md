@@ -1,10 +1,14 @@
-# Brain Tumor Detection Using Machine Learning
+# 🧠 Brain Tumor Detection Using Machine Learning
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+</p>
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/varunvamin/Brain-Tumor-Detection-ML/blob/main/Brain_Tumor_Detection.ipynb)
 
-**Python, OpenCV, Scikit-learn, argparse, joblib**
-
-## Overview
+## 📝 Overview
 This project implements a computer vision pipeline and an ensemble of machine learning classifiers to detect the presence of brain tumors in MRI scans. The system features a fully modular, command-line driven architecture with a majority-voting mechanism to ensure high diagnostic reliability.
 
 ## 🚀 Quick Start: Test it Instantly!
@@ -31,7 +35,7 @@ You don't need to download large datasets or wait for models to train. The pre-t
 
 ---
 
-## 🧠 Training the Models from Scratch
+## ⚙️ Training the Models from Scratch
 
 If you want to train the models yourself, you will need the MRI dataset. 
 
@@ -48,7 +52,10 @@ If you want to train the models yourself, you will need the MRI dataset.
    - Display accuracy metrics and confusion matrices.
    - Save the newly trained models as `.pkl` files in the directory.
 
-## Features
+## ✨ Features
 - **End-to-End Pipeline**: Complete image preprocessing (Resize, Grayscale, Gaussian Blur, Normalization) combined with PCA for dimensionality reduction.
 - **Ensemble Learning**: Utilizes SVM, KNN, and Random Forest classifiers, combining their outputs via a majority voting mechanism to maximize accuracy.
 - **Model Persistence**: Uses `joblib` to save and load models, allowing for isolated training and blazing-fast real-time inference.
+
+## 📝 License
+This project is open-source and available under the [MIT License](LICENSE).
