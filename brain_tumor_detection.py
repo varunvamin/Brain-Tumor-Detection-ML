@@ -218,6 +218,7 @@ def predict_image(img_path):
     plt.show()
 
 def main():
+    """Parses command-line arguments and routes execution to either training or prediction."""
     parser = argparse.ArgumentParser(description="Brain Tumor Detection using MRI Images")
     parser.add_argument('--mode', type=str, choices=['train', 'predict'], required=True, 
                         help="Mode: 'train' to train models and evaluate, 'predict' to test a specific image")
