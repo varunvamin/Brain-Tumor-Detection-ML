@@ -52,6 +52,17 @@ If you want to train the models yourself, you will need the MRI dataset.
    - Display accuracy metrics and confusion matrices.
    - Save the newly trained models as `.pkl` files in the directory.
 
+## 📈 Model Performance
+
+Below is the visualized performance of the models based on the test dataset:
+
+<p align="center">
+  <img src="assets/accuracy_chart.png" width="55%" />
+</p>
+<p align="center">
+  <img src="assets/confusion_matrices.png" width="95%" />
+</p>
+
 ## ✨ Features
 - **End-to-End Pipeline**: Complete image preprocessing (Resize, Grayscale, Gaussian Blur, Normalization) combined with PCA for dimensionality reduction.
 - **Ensemble Learning**: Utilizes SVM, KNN, and Random Forest classifiers, combining their outputs via a majority voting mechanism to maximize accuracy.
